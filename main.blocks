@@ -1,0 +1,18 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="Xq!qzV%74T0dq#@Z|):*">Player</variable><variable type="KIND_SpriteKind" id="%3~oqV_:nbzKVSL7Ym_S">Projectile</variable><variable type="KIND_SpriteKind" id="@:sOI*squ/JI$K:P*Zgw">Food</variable><variable type="KIND_SpriteKind" id="T4JSqHre/wre*?HVWk%j">Enemy</variable><variable id="bgb@fmRlE#-!4-`0eJ:B">mySprite</variable><variable id="*NUp_`mKYlJLV$cOJoYh">Varaible</variable></variables><block type="keyonevent" id="luK*j^`M1N4waagjks$L" x="146" y="-144"><field name="button">controller.anyButton</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="variables_set" id="k@o(Au6!k@8p!Z)Ct;I]"><field name="VAR" id="bgb@fmRlE#-!4-`0eJ:B">mySprite</field><value name="VALUE"><shadow type="math_number" id="+z$^!MqX)}]`qc}9!iSM"><field name="NUM">0</field></shadow><block type="spritescreate" id="m^y5piaTr?0M:J(%yxKo"><value name="img"><shadow type="screen_image_picker" id="O$Set}.tt.H1%r*Cj%3k"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . 2 2 2 . . . . . . 2 2 2 . 
+. . 2 . . 2 2 2 2 2 2 2 2 . . . 
+. 2 . . . . . 3 . . 3 . . . . . 
+. . . . . . . 3 . . 3 . . . . . 
+. . . . . . . 3 . . 3 . . . . . 
+. . . . . . . 3 . . 3 . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":null}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="e2OM/[$Ms-SAmyC#L$?x"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="spritesetvel" id="`4TYr65H,;JZZ8,GNGhf"><value name="sprite"><block type="variables_get" id="N7W=qKr0S^?1xFBKNK(h"><field name="VAR" id="bgb@fmRlE#-!4-`0eJ:B">mySprite</field></block></value><value name="vx"><shadow type="spriteSpeedPicker" id="$7,z-P;id]`$-;)XBhAG"><field name="speed">50</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id="I~M8V`SyM6lX__[Ob6$!"><field name="speed">50</field></shadow></value><next><block type="hudChangeScoreBy" id="tRbRl%kIZj!e?U:[6[go"><value name="value"><shadow type="math_number" id="?3Znki`A4N0)[m^_paK["><field name="NUM">5</field></shadow></value></block></next></block></next></block></statement></block><block type="gameonscore" id="j5=j3MgGA^1wjx;SPDL5" x="0" y="0"><value name="score"><shadow type="math_number" id="BD#BI|72ZCH:0v,I8[-@"><field name="NUM">9000</field></shadow></value><statement name="HANDLER"><block type="gameOver2" id="g96:]nR^M]rOZ8Dx!=;r"><value name="win"><shadow type="toggleWinLose" id="Z-!T^3,Q)}WZ8P7@d+VC"><field name="win">true</field></shadow></value></block></statement></block><block type="keyonevent" id="(*,df-2(`e%miZ!uf;9m" x="4" y="115"><field name="button">controller.A</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="music_playable_play" id="1z@a=s8o#sljy.=-h0Lf"><field name="playbackMode">music.PlaybackMode.UntilDone</field><value name="toPlay"><shadow type="music_melody_playable" id="zh;,C@9/|Fb[7GtT{,SZ"><field name="melody">music.pewPew</field></shadow></value></block></statement></block><block type="pxt-on-start" id="7@Pvj0:@${cKqjEF~=xR" x="423" y="211"><statement name="HANDLER"><block type="game_show_long_text" id="fM?3j!xi);3%~|wceC`P"><field name="layout">DialogLayout.Top</field><value name="str"><shadow type="text" id="}qsDd~T$zz1LL9]k~!+I"><field name="TEXT">Press A</field></shadow></value></block></statement></block></xml>
